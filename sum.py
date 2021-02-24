@@ -8,7 +8,6 @@ results = []
 
 
 while True:
-
     try:
         a = int(input("Numero 1: "))
         b = int(input("Numero 2: "))
@@ -23,7 +22,11 @@ while True:
     inputB.append(b)
     results.append(result)
 
+inputA += [x*2 for x in inputA]
+inputA.sort()
+inputB += [y*2 for y in inputB]
+inputB.sort()
+
 
 print(inputA)
 print(inputB)
-print(results)
